@@ -1,47 +1,32 @@
 .home {
 
     .nav {
-        width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: center;
+        
         
         @media @phone {
-
-            flex-direction: column;
-            justify-content: center;
-            padding-top: 10px;
+            padding: 4px;
+            margin: 4px;
         }
 
         .logo-heading {
-            font-size: 4.2rem;
+            font-size: 3.5rem;
+            padding-left: 10px;
+            
+            @media @phone {
+                font-size: 3.2rem;
+            }
         }
         
         a {
-            font-size: 1.8rem;
+            font-size: .8rem;
             color: @main-font-color;
             text-decoration: none;
-            justify-content: space-around;
-            padding: 20px;
-        
-
-            @media @phone {
-
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                padding: 2px;
-                padding-top: 10px;
-                font-size: 1.6rem;
-            }
-    
-
+            margin: 4px;
+            padding-left: 8px;
         }
 
-
-
     }
-
 }
