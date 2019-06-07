@@ -285,6 +285,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: #F6F6F6;
   color: #454A59;
+  transition: 0.7s ease-in-out;
 }
 @media ( max-width: 500px ) {
   .home .walk .walk-text .btn .btn {
