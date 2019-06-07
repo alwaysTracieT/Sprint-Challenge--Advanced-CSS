@@ -32,15 +32,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. What is the difference between an adaptive and fully responsive website?
+    1. Responsive and adaptive sites are both similar in that they both change the appearance of a web page depending on the type of device accessing it. Adaptive design uses breakpoints to set different box size for different screens within the CSS. Responsive design combines the best of fixed, fluid, and adaptive layouts to create a "seamless" user experience over many different types of screens. This is possible through the use of max-width and min-width media queries.
+    Source: "[https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/](https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/)"
 
-2. Describe what it means to be mobile first vs desktop first.
+2. Describe what it means to be mobile first vs. desktop first.
+    2. Mobile-first means that the initial CSS for a web page was tailored for mobile screens and the desktop design settings were added later. Desktop-first is the opposite. 
+    Source: "[https://fredericgonzalo.com/en/2017/03/01/understanding-the-difference-between-mobile-first-adaptive-and-responsive-design/](https://fredericgonzalo.com/en/2017/03/01/understanding-the-difference-between-mobile-first-adaptive-and-responsive-design/)"
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+    3. Setting html font-size to 62.5% allows us to size the fonts on our pages with base-10 numbers in rem instead of having to compute relative font-size with a 16px default. The mathematical equation that explains why 62.5% is the magic number is:
+    (10/16) x 100 = 62.5% 
+    Once set in the html tag, our default font size becomes 10px which is much easier to work with.
+    Source: Live lecture for WEB19 and WEB21
 
-4. How would you describe preprocessing to someone new to CSS?
+4. Describe preprocessing to someone new to CSS.
+    4. In computer science, a preprocessor takes data we input, translates it, and produces an output that can be used as the new input in another program. A CSS preprocessor uses unique syntax and features like mixins, nesting selectors, and escaping values that can't be used in "regular" CSS to make navigating our code much easier.
+    Source: Live lecture for WEB19 and WEB21
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    5. I can use variables interchangeably, which makes it fun to experiment by being able to switch visual aspects of my pages quickly. I also like that I can recognize design choices (colors, for example) that other developers used more easily in pre-existing code. While I understand the structure of each, I am struggling to understand the "variable hierarchy" making it difficult to know when to use mixins or escaping values. 
+    Source: Me.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
