@@ -168,6 +168,13 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media ( max-width: 500px ) {
+  .home .nav {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
 .home .nav .logo-heading {
   font-size: 4.2rem;
 }
@@ -177,18 +184,15 @@ p {
   text-decoration: none;
   justify-content: space-around;
   padding: 20px;
-  padding-bottom: 20px;
 }
-@media (max-width: 500px) {
-  .home .nav {
-    flex-wrap: wrap;
+@media ( max-width: 500px ) {
+  .home .nav a {
+    display: flex;
     justify-content: center;
+    width: 100%;
+    padding: 2px;
     padding-top: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .home .nav .logo-heading {
-    font-size: 3rem;
+    font-size: 1.6rem;
   }
 }
 footer {
@@ -230,6 +234,20 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media ( max-width: 500px ) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -255,11 +273,11 @@ footer {
   background-color: #22283A;
   color: #F6F6F6;
   border: 1px solid #5E6164;
-  border-radius: 10%;
+  border-radius: 5%;
   font-size: 1.4rem;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media ( max-width: 500px ) {
   .home .walk .walk-text .btn {
     width: 100%;
   }
@@ -268,12 +286,38 @@ footer {
   background: #F6F6F6;
   color: #454A59;
 }
+@media ( max-width: 500px ) {
+  .home .walk .walk-text .btn .btn {
+    width: 100%;
+    height: 70px;
+    font-size: 2.5rem;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 .home .walk .walk-img img {
-  width: 100%;
+  width: 500;
   height: auto;
   border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .home .walk .walk-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

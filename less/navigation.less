@@ -8,6 +8,13 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         
+        @media @phone {
+
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
         .logo-heading {
             font-size: 4.2rem;
         }
@@ -18,24 +25,23 @@
             text-decoration: none;
             justify-content: space-around;
             padding: 20px;
-            padding-bottom: 20px;
+        
+
+            @media @phone {
+
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 2px;
+                padding-top: 10px;
+                font-size: 1.6rem;
+            }
+    
+
         }
 
-        @media @mobile {
-            flex-wrap: wrap;
-            justify-content: center;
-            padding-top: 10px;
-          }
-      
-          .logo-heading {
-            @media @mobile {
-              font-size: 3rem;
-            }
-          }
 
 
     }
-
-
 
 }
